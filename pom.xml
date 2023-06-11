@@ -9,11 +9,11 @@
 		<relativePath/>
 		<!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.springschedulars</groupId>
-	<artifactId>SpringSchedulars</artifactId>
+	<groupId>com.example.springschedulers</groupId>
+	<artifactId>SpringSchedulers</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringSchedulars</name>
-	<description>Spring Schedular Demo</description>
+	<name>SpringSchedulers</name>
+	<description>Spring Scheduler Demo</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

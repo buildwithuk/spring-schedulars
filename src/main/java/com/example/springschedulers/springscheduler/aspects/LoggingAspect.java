@@ -1,4 +1,4 @@
-package com.example.springschedulars.springschedular.aspects;
+package com.example.springschedulers.springscheduler.aspects;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
@@ -9,7 +9,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class LoggingAspect {
 
-    @Before("com.example.springschedulars.springschedular.aspects.CommonPointCuts.logSchedularsPointCut()")
+    /*
+     * This method is executed when the scheduler is to be executed. 
+     * It will log the scheduler about to be executed.
+     */
+    @Before("com.example.springschedulers.springscheduler.aspects.CommonPointCuts.logSchedulersPointCut()")
     public void logMethodCallBeforeExecution(JoinPoint joinPoint) {
 
         String className = joinPoint.getSignature().getDeclaringTypeName();
@@ -18,8 +22,8 @@ public class LoggingAspect {
         StringBuilder sb = new StringBuilder(className);
         sb.append(".");
         sb.append(methodName);
-
-        System.out.println(sb.toString());
+        
+        System.out.println("Starting scheduler: " + sb.toString());
 
     }
 }

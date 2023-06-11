@@ -1,4 +1,4 @@
-package com.example.springschedulars.springschedular.aspects;
+package com.example.springschedulers.springscheduler.aspects;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,6 +7,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LogSchedular {
+public @interface LogScheduler {
 
 }

@@ -1,16 +1,16 @@
-package com.example.springschedulars.springschedular;
+package com.example.springschedulers.springscheduler;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringSchedularsApplication {
+public class SpringSchedulersApplication {
 
 
 	public static void main(String[] arg) {
 
 
-		SpringApplication.run(SpringSchedularsApplication.class, arg);
+		SpringApplication.run(SpringSchedulersApplication.class, arg);
 		
 		
 
